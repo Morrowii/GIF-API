@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href='assets/style/reset.css'>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=MedievalSharp" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/style/style.css">
+
+    <title>GIF API</title>
+  </head>
+  <body>
+
+    <div class='container-fluid'>
+        <div class='row'>
+            <div class='col d-flex' id='form-tray'>
+                <form class='form-inline my-3'>
+                    <div class="form-group d-flex">
+                        <label for="gif-search" class='mr-3 font-weight-bold text-white'></label>
+                        <input type="search" class="form-control mr-3" id="gif-search" placeholder="Search for GIFs">
+                    </div>
+                    <button type="button" class="btn btn-primary bg-white text-dark" id='add-button'>Add</button>
+                </form>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col d-flex flex-wrap justify-content-center pl-3 pt-3 pr-2 pb-2' id='button-tray'>
+                <button class='gif-button btn bg-white mr-2 mb-2' value='Shire'>Shire</button>
+                <button class='gif-button btn bg-white mr-2 mb-2' value='Frodo'>Frodo</button>
+                <button class='gif-button btn bg-white mr-2 mb-2' value='Gandalf'>Gandalf</button>
+                <button class='gif-button btn bg-white mr-2 mb-2' value='Gollum'>Gollum</button>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col d-flex flex-wrap justify-content-center pl-3 pt-3 pr-2 pb-2' id='gif-tray'></div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/javascript/logic.js"></script>
+  </body>
+</html>
