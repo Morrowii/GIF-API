@@ -12,7 +12,7 @@ $('.container-fluid').on('click', '.gif-button', function() {
 
     var apiKey = 'zEYRcwolNEd3rEensVCAEcZwhGJ5AHz3';
     var buttonText = $(this).text();
-    var queryURL = 'http://api.giphy.com/v1/gifs/search?api_key=' + apiKey + '&limit=10&q=' + buttonText;
+    var queryURL = 'https://api.giphy.com/v1/gifs/search?api_key=' + apiKey + '&limit=10&q=' + buttonText;
 
     $.ajax({
         url: queryURL,
